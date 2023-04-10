@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Software Developer Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Omni Hub</h1>
+        <ul>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about-me-section" id="about-me">
+        <div class="about-me-box">
+          <div class="profile-imag">
+            <img
+              id="profile-image"
+              src="image/img.jpeg"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="about-me-content">
+            <h2>About Me</h2>
+            <p>
+              I am a software developer with 5 years of experience. My skills
+              include HTML, CSS, JavaScript, and Python. I enjoy solving complex
+              problems and creating software solutions that are user-friendly
+              and efficient.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-section" id="projects-section">
+        <div class="card">
+          <img src="image/menu.png" alt="Card Image" />
+          <div class="card-content">
+            <h3>Cafe Menu</h3>
+            <p>
+              This is a simple example of one of my work known as cafe menu.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="image/survy.png" alt="Card Image" />
+          <div class="card-content">
+            <h3>Survy Form</h3>
+            <p>
+              This is survy form build with the help of html and css.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="image/tribute.png" alt="Card Image" />
+          <div class="card-content">
+            <h3>Tribute Page</h3>
+            <p>
+              This is tribute page, a sample to create tribute page for certen
+              indivisual.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="Contact">
+        <div class="contact-box">
+          <button id="scroll-to-top-button">Scroll to Top</button>
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" spellcheck="" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2023 OMNIHUB</p>
+    </footer>
+  </body>
+</html>
