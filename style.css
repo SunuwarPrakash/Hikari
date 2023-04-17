@@ -205,13 +205,40 @@ a.btn {
 }
 
 .contact-box form {
+.contact-section {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4)
+  padding: 50px;
+  
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 1%), radial-gradient(at top center, rgba(255,255,255,0.1) 1%, rgba(0,0,0,0.1) 120%) rgb(151, 150, 150, 0.5) ;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(3px);
+}
+
+.contact-box h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-box form {
   display: grid;
   grid-gap: 20px;
 }
 
 .contact-box label {
   display: block;
-  font-size: 1.2em;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -219,7 +246,7 @@ a.btn {
 .contact-box textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 14px;
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -231,7 +258,6 @@ a.btn {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 1.2em;
   cursor: pointer;
 }
 
