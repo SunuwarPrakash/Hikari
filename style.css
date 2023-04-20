@@ -47,22 +47,16 @@ nav {
   align-items: center;
 }
 
+/**to make equal gap **/
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav h1 {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav li {
-  margin-right: 0 10px;
-  display: inline;
-  float: right;
+  margin: 0 1rem;
 }
+
 
 nav a {
   display: block;
