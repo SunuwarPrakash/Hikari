@@ -121,10 +121,7 @@ html {
   font-size: 14px;
 }
 
-.signature {
-  margin-top: 30px;
-  color: rgb(1, 1, 2);
-}
+
 
 .back {
   transform: rotateY(180deg);
@@ -161,31 +158,14 @@ html {
   font-size: 30px;
 }
 
-.signature {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
+
 
 .signature a {
   color: #fff; /* Change link color */
-  text-align: center; /* Center link */
+  padding-left: 30%;
 }
 
-@media only screen and (max-width: 768px) {
-  .front .name p {
-    display: none;
-  }
-  .front .name:after {
-    content: 'Tap here to contact me';
-    display: block;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-  }
-}
+
 
 /* Remove link underline */
 a {
@@ -195,19 +175,67 @@ a {
 /* Move link to center bottom */
 .signature {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 0;
+  left: 58%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Style link on hover or tap */
-.signature a:hover,
-.signature a:focus {
+.signature {
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 20%;
+
+  line-height: 60px;
   color: #fff;
-  background-color: #332e2e6a;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    yellow,
+    orange,
+    red,
+    violet,
+    purple,
+    blue,
+    yellow
+  );
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
 }
+.signature:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.signature:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5%;
+}
+si:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+/*button design ends here*/
