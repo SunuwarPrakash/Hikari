@@ -1,3 +1,4 @@
+/* Default styles */
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
@@ -39,6 +40,10 @@ img {
   margin-right: auto;
   opacity: 0.4;
   background: linear-gradient(#f4a261, #ffc52d);
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: luminosity;
+  opacity: 65%;
 }
 
 hr {
@@ -75,7 +80,121 @@ h2 {
 }
 
 /* FOOTER */
+footer {
+  font-size: 14px;
+}
 
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background: linear-gradient(#f4a261, #ffc52d);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+  background: linear-gradient(#f4a261, #ffc52d);
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: luminosity;
+  opacity: 65%;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: none;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.item p {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.item .price {
+  font-size: 16px;
+  margin-right: 10px; /* added margin-right */
+}
+
+.flavor,
+.dessert {
+  text-align: center;
+  width: 100%;
+}
+
+/* FOOTER */
 footer {
   font-size: 14px;
 }
