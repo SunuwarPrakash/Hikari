@@ -4,6 +4,7 @@
   padding: 0;
 }
 html {
+  scroll-behavior: smooth;
   --s: 200px; /* control the size */
   --c1: #1d1d1d;
   --c2: #4e4f51;
