@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   </head>
   <body>
     <header>
@@ -18,6 +20,43 @@
         </ul>
       </nav>
     </header>
+    <div class="audio-player">
+      <h2>Responsive Audio Player</h2>
+      <audio id="audio" src="audio /amazing track.mp3" controls></audio>
+      <div class="controls">
+        <button onclick="audio.currentTime -= 5;">
+          <i class="fa fa-backward"></i>
+        </button>
+        <button onclick="audio.paused ? audio.play() : audio.pause();">
+          <i class="fa fa-play"></i>
+        </button>
+        <button onclick="audio.currentTime += 5;">
+          <i class="fa fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <script>
+      var audio = document.getElementById("audio");
+      var playPauseIcon = document.getElementById("playPauseIcon");
+    
+      function togglePlayPause() {
+        if (audio.paused) {
+          audio.play();
+          playPauseIcon.className = "fa fa-pause";
+        } else {
+          audio.pause();
+          playPauseIcon.className = "fa fa-play";
+        }
+      }
+    
+      function skipBackward() {
+        audio.currentTime -= 5;
+      }
+    
+      function skipForward() {
+        audio.currentTime += 5;
+      }
+    </script>
     <main>
       <section class="about-me-section" id="about-me">
         <div class="about-me-box">
