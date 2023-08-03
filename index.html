@@ -20,21 +20,7 @@
         </ul>
       </nav>
     </header>
-    <div class="audio-player">
-      <h2>Responsive Audio Player</h2>
-      <audio id="audio" src="audio /Yiruma-Greatest Piano Collection.mp3 " controls></audio>
-      <div class="controls">
-        <button onclick="audio.currentTime -= 5;">
-          <i class="fa fa-backward"></i>
-        </button>
-        <button onclick="audio.paused ? audio.play() : audio.pause();">
-          <i class="fa fa-play"></i>
-        </button>
-        <button onclick="audio.currentTime += 5;">
-          <i class="fa fa-forward"></i>
-        </button>
-      </div>
-    </div>
+    
     <script>
       var audio = document.getElementById("audio");
       var playPauseIcon = document.getElementById("playPauseIcon");
